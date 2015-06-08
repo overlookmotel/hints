@@ -1,0 +1,49 @@
+{
+  "name": "hints",
+  "version": "0.0.0",
+  "description": "Tools for parsing hint comments in code",
+  "main": "./lib/",
+  "author": {
+    "name": "Overlook Motel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overlookmotel/hints.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overlookmotel/hints/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "chai": "^2.3.0",
+	"jshint": "^2.7.0",
+    "istanbul": "^0.3.14",
+    "coveralls": "^2.11.2"
+  },
+  "keywords": [
+    "hints",
+    "comment",
+    "comments",
+    "code",
+    "test",
+    "tests",
+    "instrument",
+    "instrumentation"
+  ],
+  "scripts": {
+    "test": "make test",
+    "cover": "make cover"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readmeFilename": "README.md",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/overlookmotel/hints/raw/master/License"
+    }
+  ]
+}
