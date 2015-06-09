@@ -1,7 +1,7 @@
 {
   "name": "hints",
   "version": "0.0.0",
-  "description": "Tools for parsing hint comments in code",
+  "description": "Tools for parsing hint comments in Javascript code",
   "main": "./lib/",
   "author": {
     "name": "Overlook Motel"
@@ -14,11 +14,13 @@
     "url": "https://github.com/overlookmotel/hints/issues"
   },
   "dependencies": {
+    "acorn": "^1.2.2",
+    "lodash": "^3.9.3"
   },
   "devDependencies": {
     "mocha": "^2.2.4",
     "chai": "^2.3.0",
-	"jshint": "^2.7.0",
+    "jshint": "^2.7.0",
     "istanbul": "^0.3.14",
     "coveralls": "^2.11.2"
   },
