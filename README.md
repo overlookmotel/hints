@@ -28,6 +28,15 @@ var h = hints(x.toString(), 'testhint');
 // h = {a: 1, b: {c: 2, d: true}, e: true}
 ```
 
+Hints can be separated with spaces or commas.
+
+Both these are equivalent:
+
+```js
+// testhint a:1 b.c:2 b.d e
+// testhint a:1, b.c:2, b.d, e
+```
+
 #### `hints.full(code, identifier [, options])`
 
 Uses [acorn](https://www.npmjs.com/package/acorn) internally to parse the code. You can get the AST (abstract syntax tree) returned too.

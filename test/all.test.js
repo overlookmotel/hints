@@ -18,7 +18,7 @@ chai.config.includeStack = true;
 
 describe('hints()', function() {
 	describe('Single-line comments', function() {
-		var comment1 = '//  testhint a.b:1 c:3 d \t\n',
+		var comment1 = '//  testhint a.b:1, c:3 d \t\n',
 			comment2 = '//   testhint e\n';
 		var code = 'function x(a, b) {\n' +
 			'\t' + comment1 +
@@ -42,7 +42,7 @@ describe('hints()', function() {
 	});
 
 	describe('Multi-line comments', function() {
-		var comment1 = '/*testhint a.b:1 c:3 \t \n' +
+		var comment1 = '/*testhint a.b:1 , c:3 \t \n' +
 			' * foo foo \n' +
 			' *\t  *testhint d\n' +
 			' */';
