@@ -4,6 +4,6 @@
 
 * Initial release
 
-## Next
+## 0.2.0
 
 * Support comma separators
