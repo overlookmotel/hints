@@ -14,8 +14,8 @@
     "url": "https://github.com/overlookmotel/hints/issues"
   },
   "dependencies": {
-    "acorn": "^1.2.2",
     "lodash": "^3.9.3"
+    "acorn": "^3.2.0",
   },
   "devDependencies": {
     "mocha": "^2.2.4",

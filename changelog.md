@@ -7,3 +7,7 @@
 ## 0.2.0
 
 * Support comma separators
+
+## Next
+
+* Update `acorn` dependency to v3.2.0
