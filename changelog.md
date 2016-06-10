@@ -16,6 +16,7 @@
 * Update dev dependencies
 * Travis tests against node v4 + v6
 * Replace `Makefile` with npm scripts
+* JSDoc comments
 * Update license
 * Update `.npmignore`
 * README update
