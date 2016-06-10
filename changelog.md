@@ -13,5 +13,6 @@
 * Update `acorn` dependency to v3.2.0
 * Update `lodash` dependency to v4.13.1
 * Update dev dependencies
+* Travis tests against node v4 + v6
 * Replace `Makefile` with npm scripts
 * Update license
