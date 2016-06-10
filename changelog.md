@@ -18,3 +18,4 @@
 * Replace `Makefile` with npm scripts
 * Update license
 * Update `.npmignore`
+* README update

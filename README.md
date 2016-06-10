@@ -10,8 +10,6 @@
 [![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/hints.svg)](https://david-dm.org/overlookmotel/hints)
 [![Coverage Status](https://img.shields.io/coveralls/overlookmotel/hints/master.svg)](https://coveralls.io/r/overlookmotel/hints)
 
-API is not stable yet. May change in v0.2.0.
-
 ## Usage
 
 Parses Javascript code for hint comments.
@@ -74,7 +72,7 @@ Use `npm test` to run the tests. Use `npm run cover` to check coverage.
 
 ## Changelog
 
-See changelog.md
+See [changelog.md](https://github.com/overlookmotel/hints/blob/master/changelog.md)
 
 ## Issues
 
