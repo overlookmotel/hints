@@ -16,3 +16,4 @@
 * Travis tests against node v4 + v6
 * Replace `Makefile` with npm scripts
 * Update license
+* Update `.npmignore`
