@@ -14,3 +14,4 @@
 * Update `lodash` dependency to v4.13.1
 * Update dev dependencies
 * Replace `Makefile` with npm scripts
+* Update license
