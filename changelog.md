@@ -8,7 +8,7 @@
 
 * Support comma separators
 
-## Next
+## 1.0.0
 
 * Anonymous function statements parsed, remove `function` option
 * Update `acorn` dependency to v3.2.0
