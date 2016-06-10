@@ -13,3 +13,4 @@
 * Update `acorn` dependency to v3.2.0
 * Update `lodash` dependency to v4.13.1
 * Update dev dependencies
+* Replace `Makefile` with npm scripts
