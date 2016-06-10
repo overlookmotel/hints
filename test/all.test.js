@@ -67,6 +67,34 @@ describe('hints()', function() {
 			expect(code.slice(res.e.start, res.e.end)).to.equal(comment2);
 		});
 	});
+
+	describe('Anonymous function statements', function() {
+		it('parsed correctly', function() {
+			var comment1 = '// testhint a\n';
+			var code = 'function (a, b) {\n' + comment1 + '}';
+
+			var res = hints.full(code, 'testhint', {pos: true});
+
+			expect(res.hints).to.deep.equal({a: true});
+			expect(res.hintsPos).to.be.ok;
+			expect(code.slice(res.hintsPos.a.start, res.hintsPos.a.end)).to.equal(comment1);
+			expect(res.tree).to.be.ok;
+			expect(res.tree.body).to.be.ok;
+		});
+
+		it('parsed correctly generators', function() {
+			var comment1 = '// testhint a\n';
+			var code = 'function* (a, b) {\n' + comment1 + '}';
+
+			var res = hints.full(code, 'testhint', {pos: true});
+
+			expect(res.hints).to.deep.equal({a: true});
+			expect(res.hintsPos).to.be.ok;
+			expect(code.slice(res.hintsPos.a.start, res.hintsPos.a.end)).to.equal(comment1);
+			expect(res.tree).to.be.ok;
+			expect(res.tree.body).to.be.ok;
+		});
+	});
 });
 
 describe('hints.full()', function() {
@@ -75,19 +103,6 @@ describe('hints.full()', function() {
 		var code = 'function x(a, b) {\n' + comment1 + '}';
 
 		var res = hints.full(code, 'testhint');
-
-		expect(res.hints).to.deep.equal({a: true});
-		expect(res.hintsPos).to.be.ok;
-		expect(code.slice(res.hintsPos.a.start, res.hintsPos.a.end)).to.equal(comment1);
-		expect(res.tree).to.be.ok;
-		expect(res.tree.body).to.be.ok;
-	});
-
-	it('function option', function() {
-		var comment1 = '// testhint a\n';
-		var code = 'function (a, b) {\n' + comment1 + '}';
-
-		var res = hints.full(code, 'testhint', {pos: true, function: true});
 
 		expect(res.hints).to.deep.equal({a: true});
 		expect(res.hintsPos).to.be.ok;

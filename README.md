@@ -37,7 +37,7 @@ Both these are equivalent:
 // testhint a:1, b.c:2, b.d, e
 ```
 
-#### `hints.full(code, identifier [, options])`
+#### `hints.full(code, identifier)`
 
 Uses [acorn](https://www.npmjs.com/package/acorn) internally to parse the code. You can get the AST (abstract syntax tree) returned too.
 
@@ -67,22 +67,6 @@ function x(a, b) {
 var h = hints(x.toString(), 'testhint', {pos: true});
 // h = {a: {value: 1, start: 20, end: 36}}
 ```
-
-#### function
-
-If parsing the code of a function, set this option as `true`.
-Default: `false`
-
-```js
-var x = function (a, b) {
-    // testhint a:1
-}
-
-var h = hints(x.toString(), 'testhint', {function: true});
-// h = {a: {value: 1, start: 20, end: 36}}
-```
-
-NB Without `function: true` set, the above would throw an error as [acorn](https://www.npmjs.com/package/acorn) sees a function statement with no function name - which is illegal.
 
 ## Tests
 
