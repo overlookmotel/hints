@@ -68,8 +68,8 @@ describe('hints()', function() {
 		});
 	});
 
-	describe('Anonymous function statements', function() {
-		it('parsed correctly', function() {
+	describe('Anonymous function/class statements', function() {
+		it('functions', function() {
 			var comment1 = '// testhint a\n';
 			var code = 'function (a, b) {\n' + comment1 + '}';
 
@@ -82,9 +82,22 @@ describe('hints()', function() {
 			expect(res.tree.body).to.be.ok;
 		});
 
-		it('parsed correctly generators', function() {
+		it('generators', function() {
 			var comment1 = '// testhint a\n';
 			var code = 'function* (a, b) {\n' + comment1 + '}';
+
+			var res = hints.full(code, 'testhint', {pos: true});
+
+			expect(res.hints).to.deep.equal({a: true});
+			expect(res.hintsPos).to.be.ok;
+			expect(code.slice(res.hintsPos.a.start, res.hintsPos.a.end)).to.equal(comment1);
+			expect(res.tree).to.be.ok;
+			expect(res.tree.body).to.be.ok;
+		});
+
+		it('classes', function() {
+			var comment1 = '// testhint a\n';
+			var code = 'class {\n' + comment1 + '}';
 
 			var res = hints.full(code, 'testhint', {pos: true});
 

@@ -20,3 +20,7 @@
 * Update license
 * Update `.npmignore`
 * README update
+
+## Next
+
+* Parse anonymous class statements
