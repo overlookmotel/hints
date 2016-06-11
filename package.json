@@ -1,6 +1,6 @@
 {
   "name": "hints",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tools for parsing hint comments in Javascript code",
   "main": "./lib/",
   "author": {

@@ -21,6 +21,6 @@
 * Update `.npmignore`
 * README update
 
-## Next
+## 1.1.0
 
 * Parse anonymous class statements
