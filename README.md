@@ -1,5 +1,7 @@
 # hints.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/overlookmotel/hints.svg)](https://greenkeeper.io/)
+
 # Tools for parsing hint comments in Javascript code
 
 ## Current status
